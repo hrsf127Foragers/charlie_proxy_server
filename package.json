@@ -1,0 +1,19 @@
+{
+  "name": "fec2020",
+  "version": "1.0.0",
+  "description": "proxy server for FEC 2020 -- yelp mockup ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrsf127Foragers/charlie_proxy_server.git"
+  },
+  "author": "Charlie Thao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrsf127Foragers/charlie_proxy_server/issues"
+  },
+  "homepage": "https://github.com/hrsf127Foragers/charlie_proxy_server#readme"
+}
