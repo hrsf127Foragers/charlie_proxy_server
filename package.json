@@ -4,7 +4,8 @@
   "description": "proxy server for FEC 2020 -- yelp mockup ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/proxyServer.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hrsf127Foragers/charlie_proxy_server/issues"
   },
-  "homepage": "https://github.com/hrsf127Foragers/charlie_proxy_server#readme"
+  "homepage": "https://github.com/hrsf127Foragers/charlie_proxy_server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
