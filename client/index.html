@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Team Foragers FEC Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <h1>Proxy Server... FEC -- yelp!</h1>
-    <div id='gallery'></div>
-    <div id="review"></div>
-    <div id="app"></div>
-    <!-- <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
+    <div>
+      <div id='gallery'></div>
+      <div id="review"></div>
+      <div id="app"></div>
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="http://localhost:3000/bundle.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
     <script src="http://localhost:4568/bundle.js"></script>
     <script>
       ReactDOM.render(
-        React.createElement(Info),
+        React.createElement(Gallery),
         document.getElementById('gallery')
       );
       ReactDOM.render(
-        React.createElement(CountDown),
+        React.createElement(App),
         document.getElementById('review')
       );
       ReactDOM.render(
-        React.createElement(Related),
+        React.createElement(App),
         document.getElementById('app')
       );
-    </script> -->
+    </script>
   </body>
 </html>

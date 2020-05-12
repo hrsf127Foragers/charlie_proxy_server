@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/hrsf127Foragers/charlie_proxy_server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
