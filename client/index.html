@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div>
+    <div class="yeld">
       <div id='gallery'></div>
       <div id="review"></div>
       <div id="app"></div>
@@ -23,11 +23,11 @@
         document.getElementById('gallery')
       );
       ReactDOM.render(
-        React.createElement(App),
+        React.createElement(Review),
         document.getElementById('review')
       );
       ReactDOM.render(
-        React.createElement(App),
+        React.createElement(Collection),
         document.getElementById('app')
       );
     </script>
