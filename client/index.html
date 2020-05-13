@@ -5,13 +5,50 @@
     <link rel="stylesheet" href="style.css">
     <title>Team Foragers FEC Demo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="yeld">
+    <div class="yelp">
+      <img class="navigation" src="http://localhost:8000/assets/sectionImages/navigation.png" />
+
+      <!-- top carousel section -->
       <div id='gallery'></div>
-      <div id="review"></div>
+
+      <div class="parent_container_body">
+        <!-- restaurant header section -->
+        <div class="top_static_body">
+          <div class="top_static_left">
+            <img class="title" src="http://localhost:8000/assets/sectionImages/restaurantTitle.png" />
+            <img class="popular_dish" src="http://localhost:8000/assets/sectionImages/popularDishes.png" />
+            <img class="location" src="http://localhost:8000/assets/sectionImages/location.png" />
+          </div>
+
+          <!-- sidebar section -->
+          <div class="top_static_right" id="top_static_right">
+            <img class="sidebar_fixed" src="http://localhost:8000/assets/sectionImages/sidebarOrder.png" />
+          </div>
+        </div>
+
+        <!-- review section -->
+        <div id="review"></div>
+      </div>
+
+      <!-- might consider section  -->
+      <div class="might_consider_container">
+        <img class="might_consider1" src="http://localhost:8000/assets/sectionImages/youMightAlsoConsider2.png" />
+        <img class="might_consider2" src="http://localhost:8000/assets/sectionImages/youMightAlsoConsider1.png" />
+      </div>
+
+      <!-- collection section -->
       <div id="app"></div>
+
+      <!-- footer section -->
+      <div class="footer_container">
+        <img class="footer1" src="http://localhost:8000/assets/sectionImages/footer1.png" />
+      </div>
     </div>
+    <img class="main_footer" src="http://localhost:8000/assets/sectionImages/mainFooter.png" />
+
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="http://localhost:3000/bundle.js"></script>
@@ -22,5 +59,6 @@
       document.getElementById('review')
       document.getElementById('app')
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
