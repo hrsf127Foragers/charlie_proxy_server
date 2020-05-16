@@ -17,7 +17,18 @@ app.get('/api/:restaurant_id/reviews', (req, res) => {
     .catch(err => {
       res.status(500).send(err)
     })
-})
+});
+
+app.get('/:restaurant_id/collections', (req, res) => {
+  axios.get(`http://13.57.246.172/${req.params.restaurant_id}/collections`)
+  .then(({data}) => {
+    res.status(200).send(data)
+  })
+  .catch(err => {
+    res.status(500).send(err)
+  })
+});
+
 
 app.listen(PORT, () => {
   console.log(`proxy server is listening on http://54.183.247.65:${PORT}`);
