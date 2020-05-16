@@ -30,7 +30,7 @@ app.get('/:restaurant_id/collections', (req, res) => {
 });
 
 app.get('/restaurants/:restaurant_id/photos', (req, res) => {
-  axios.get(`http://18.218.219.141:3001/${req.params.restaurant_id}/collections`)
+  axios.get(`http://18.218.219.141:3001/restaurants/${req.params.restaurant_id}/photos`)
   .then(({data}) => {
     res.status(200).send(data)
   })
@@ -40,7 +40,7 @@ app.get('/restaurants/:restaurant_id/photos', (req, res) => {
 });
 
 app.get('/restaurants/:restaurant_id', (req, res) => {
-  axios.get(`http://18.218.219.141:3001/${req.params.restaurant_id}/collections`)
+  axios.get(`http://18.218.219.141:3001/restaurants/${req.params.restaurant_id}`)
   .then(({data}) => {
     res.status(200).send(data)
   })
