@@ -29,6 +29,26 @@ app.get('/:restaurant_id/collections', (req, res) => {
   })
 });
 
+app.get('/restaurants/:restaurant_id/photos', (req, res) => {
+  axios.get(`http://18.218.219.141:3001/${req.params.restaurant_id}/collections`)
+  .then(({data}) => {
+    res.status(200).send(data)
+  })
+  .catch(err => {
+    res.status(500).send(err)
+  })
+});
+
+app.get('/restaurants/:restaurant_id', (req, res) => {
+  axios.get(`http://18.218.219.141:3001/${req.params.restaurant_id}/collections`)
+  .then(({data}) => {
+    res.status(200).send(data)
+  })
+  .catch(err => {
+    res.status(500).send(err)
+  })
+});
+
 
 app.listen(PORT, () => {
   console.log(`proxy server is listening on http://54.183.247.65:${PORT}`);
